@@ -20,4 +20,15 @@ const students = [
 ];
 
 // Recupera i dati dello studente con id 2
+const result = students.filter(function (studente) {
+  return studente.id === 2;
+});
+const student = students.find(function (studente) {
+  return studente.id === 2;
+});
+
+
+
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+console.log(result);
+console.log(student);

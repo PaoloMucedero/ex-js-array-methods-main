@@ -20,4 +20,19 @@ const students = [
 ];
 
 // Recupera la classe dello studente 'Marco Lanci'
+let classeMarco = '';
+for (let i = 0; i < students.length; i++) {
+  if (students[i].name === 'Marco Lanci') {
+    classeMarco = students[i].class;
+    break; // una volta trovato possiamo uscire dal ciclo
+  }
+}
+
+// .find restituisce il primo elemento che soddisfa la condizione
+const marco = students.find(student => student.name === 'Marco Lanci');
+
+
 // Risultato: '3C'
+
+console.log(marco.class);
+console.log(classeMarco);
